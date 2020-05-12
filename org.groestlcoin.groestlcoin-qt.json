@@ -30,20 +30,20 @@
         {
           "type": "archive",
           "only-arches": ["x86_64"],
-          "url": "https://github.com/Groestlcoin/groestlcoin/releases/download/v2.18.2/groestlcoin-2.18.2-x86_64-linux-gnu.tar.gz",
-          "sha256": "9ee26e1cd7967d0dc88670dbbdb99f95236ebc218f75977efb23f03ad8b74250"
+          "url": "https://github.com/Groestlcoin/groestlcoin/releases/download/v2.19.1/groestlcoin-2.19.1-x86_64-linux-gnu.tar.gz",
+          "sha256": "0646cae023a0be0821f357d33bdbf81fc05fc9a9e3e9d4e5936d5053f1a988d4"
         },
         {
           "type": "archive",
           "only-arches": ["arm"],
-          "url": "https://github.com/Groestlcoin/groestlcoin/releases/download/v2.18.2/groestlcoin-2.18.2-arm-linux-gnueabihf.tar.gz",
-          "sha256": "93c093b7684623c1cdf864cfacdec653ac6808d01f48ec9d1ffe26479623c6f5"
+          "url": "https://github.com/Groestlcoin/groestlcoin/releases/download/v2.19.1/groestlcoin-2.19.1-arm-linux-gnueabihf.tar.gz",
+          "sha256": "218218b18b49d924fc4085545ed71a59a985dbecdc2dab48c401d3ac622f10d4"
         },
         {
           "type": "archive",
           "only-arches": ["aarch64"],
-          "url": "https://github.com/Groestlcoin/groestlcoin/releases/download/v2.18.2/groestlcoin-2.18.2-aarch64-linux-gnu.tar.gz",
-          "sha256": "99f7a11f9f59c09f44b64f5631b73b7e98cb27a8fc35ba67c85310001b644e43"
+          "url": "https://github.com/Groestlcoin/groestlcoin/releases/download/v2.19.1/groestlcoin-2.19.1-aarch64-linux-gnu.tar.gz",
+          "sha256": "f151cfada51e981db2cb90e78f50e13ba3c64640339f41d4f212d428df8ca1bf"
         }
       ]
     },
@@ -67,7 +67,7 @@
         },
         {
           "type": "file",
-          "url": "https://raw.githubusercontent.com/Groestlcoin/groestlcoin/2.18.2/src/qt/res/src/groestlcoin.svg",
+          "url": "https://raw.githubusercontent.com/Groestlcoin/groestlcoin/2.19.1/src/qt/res/src/groestlcoin.svg",
           "sha256": "a10bfc28ed6e4fb494743986858e03cba08514572e1b22e1bf17a7f5080d591f"
         },
         {
