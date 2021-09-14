@@ -2,12 +2,11 @@
   "id": "org.groestlcoin.groestlcoin-qt",
   "runtime": "org.freedesktop.Platform",
   "sdk": "org.freedesktop.Sdk",
-  "runtime-version": "19.08",
+  "runtime-version": "20.08",
   "command": "groestlcoin-qt",
   "finish-args": [
-    /* Wayland and Xorg support */
+    /* Xorg support */
     "--socket=x11",
-    "--socket=wayland",
     /* Sound */
     "--socket=pulseaudio",
     /* OpenGL access. */
@@ -15,7 +14,10 @@
     /* IPC access. */
     "--share=ipc",
     /* Network acess. */
-    "--share=network"
+    "--share=network",
+    /* Tor auth cookie */
+    "--filesystem=/run/tor/control.authcookie:ro",
+    "--filesystem=/var/run/tor/control.authcookie:ro"
   ],
   "modules": [
     {
@@ -30,20 +32,20 @@
         {
           "type": "archive",
           "only-arches": ["x86_64"],
-          "url": "https://github.com/Groestlcoin/groestlcoin/releases/download/v2.21.1/groestlcoin-2.21.1-x86_64-linux-gnu.tar.gz",
-          "sha256": "b03bd4211f9473b39a12f6e57e64fe7bc9f2f54f27491f46f5b1bff5b96db7a5"
+          "url": "https://github.com/Groestlcoin/groestlcoin/releases/download/v22.0/groestlcoin-22.0-x86_64-linux-gnu.tar.gz",
+          "sha256": "b30c5353dd3d9cfd7e8b31f29eac125925751165f690bacff57effd76560dddd"
         },
         {
           "type": "archive",
           "only-arches": ["arm"],
-          "url": "https://github.com/Groestlcoin/groestlcoin/releases/download/v2.21.1/groestlcoin-2.21.1-arm-linux-gnueabihf.tar.gz",
-          "sha256": "3fd6c2f1cd01d73314bc6e9abc13947f3477446cab5e8665a8cb0919063066f2"
+          "url": "https://github.com/Groestlcoin/groestlcoin/releases/download/v22.0/groestlcoin-22.0-arm-linux-gnueabihf.tar.gz",
+          "sha256": "823520bd8c0b75aee99321ce42109577deaeefb521e469ab2d43f2652640b1ab"
         },
         {
           "type": "archive",
           "only-arches": ["aarch64"],
-          "url": "https://github.com/Groestlcoin/groestlcoin/releases/download/v2.21.1/groestlcoin-2.21.1-aarch64-linux-gnu.tar.gz",
-          "sha256": "aac5246f1be90f34914a82c65308b3981e78e6ce0c7d51f3c8fe6bae7455eef0"
+          "url": "https://github.com/Groestlcoin/groestlcoin/releases/download/v22.0/groestlcoin-22.0-aarch64-linux-gnu.tar.gz",
+          "sha256": "8ab192b779a694701c0e8e990162a59adac7c9694ec6fc982a49a69dc3726706"
         }
       ]
     },
@@ -67,7 +69,7 @@
         },
         {
           "type": "file",
-          "url": "https://raw.githubusercontent.com/Groestlcoin/groestlcoin/2.21.1/src/qt/res/src/groestlcoin.svg",
+          "url": "https://raw.githubusercontent.com/Groestlcoin/groestlcoin/22.0.0/src/qt/res/src/groestlcoin.svg",
           "sha256": "a10bfc28ed6e4fb494743986858e03cba08514572e1b22e1bf17a7f5080d591f"
         },
         {
