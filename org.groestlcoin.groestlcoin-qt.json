@@ -2,20 +2,14 @@
   "id": "org.groestlcoin.groestlcoin-qt",
   "runtime": "org.freedesktop.Platform",
   "sdk": "org.freedesktop.Sdk",
-  "runtime-version": "20.08",
+  "runtime-version": "21.08",
   "command": "groestlcoin-qt",
   "finish-args": [
-    /* Xorg support */
     "--socket=x11",
-    /* Sound */
     "--socket=pulseaudio",
-    /* OpenGL access. */
     "--device=dri",
-    /* IPC access. */
     "--share=ipc",
-    /* Network acess. */
     "--share=network",
-    /* Tor auth cookie */
     "--filesystem=/run/tor/control.authcookie:ro",
     "--filesystem=/var/run/tor/control.authcookie:ro"
   ],
@@ -31,21 +25,19 @@
       "sources": [
         {
           "type": "archive",
-          "only-arches": ["x86_64"],
-          "url": "https://github.com/Groestlcoin/groestlcoin/releases/download/v22.0/groestlcoin-22.0-x86_64-linux-gnu.tar.gz",
-          "sha256": "b30c5353dd3d9cfd7e8b31f29eac125925751165f690bacff57effd76560dddd"
+          "only-arches": [
+              "x86_64"
+          ],
+          "url": "https://github.com/Groestlcoin/groestlcoin/releases/download/v23.0/groestlcoin-23.0-x86_64-linux-gnu.tar.gz",
+          "sha256": "46ab078422d0d2aaf5b89ac9603cb61a6ebf6c26a73b9440365a4df5f9bce7de"
         },
         {
           "type": "archive",
-          "only-arches": ["arm"],
-          "url": "https://github.com/Groestlcoin/groestlcoin/releases/download/v22.0/groestlcoin-22.0-arm-linux-gnueabihf.tar.gz",
-          "sha256": "823520bd8c0b75aee99321ce42109577deaeefb521e469ab2d43f2652640b1ab"
-        },
-        {
-          "type": "archive",
-          "only-arches": ["aarch64"],
-          "url": "https://github.com/Groestlcoin/groestlcoin/releases/download/v22.0/groestlcoin-22.0-aarch64-linux-gnu.tar.gz",
-          "sha256": "8ab192b779a694701c0e8e990162a59adac7c9694ec6fc982a49a69dc3726706"
+          "only-arches": [
+              "aarch64"
+          ],
+          "url": "https://github.com/Groestlcoin/groestlcoin/releases/download/v23.0/groestlcoin-23.0-aarch64-linux-gnu.tar.gz",
+          "sha256": "a8a68643bc05a4f2bbc1898e6c48c666c33ff4558d5eb87e6853eba94c091648"
         }
       ]
     },
@@ -53,7 +45,8 @@
       "name": "misc",
       "buildsystem": "simple",
       "build-commands": [
-        "install -Dp -m 644 org.groestlcoin.groestlcoin-qt.desktop /app/share/applications/org.groestlcoin.groestlcoin-qt.desktop",
+        "desktop-file-edit --set-key=\"Icon\" --set-value=${FLATPAK_ID} groestlcoin-qt.desktop",
+        "install -Dp -m 644 groestlcoin-qt.desktop /app/share/applications/${FLATPAK_ID}.desktop",
         "install -Dp -m 644 groestlcoin.svg /app/share/icons/hicolor/scalable/apps/org.groestlcoin.groestlcoin-qt.svg",
         "install -Dp -m 644 org.groestlcoin.groestlcoin-qt.metainfo.xml /app/share/metainfo/org.groestlcoin.groestlcoin-qt.metainfo.xml",
         "bash install_wrappers.sh"
@@ -61,7 +54,8 @@
       "sources": [
         {
           "type": "file",
-          "path": "org.groestlcoin.groestlcoin-qt.desktop"
+          "url": "https://raw.githubusercontent.com/Groestlcoin/packaging/23.0/debian/groestlcoin-qt.desktop",
+          "sha256": "134c50eb1fbc3bd635c5e71f72891a144e49833d9f47938e22e446b625c1bc57"
         },
         {
           "type": "file",
