@@ -7,7 +7,7 @@
   <metadata_license>CC0-1.0</metadata_license>
 
   <summary>
-    Connect to the Groestlcoin P2P network
+    Fully validating Groestlcoin peer-to-peer network node, wallet and GUI
   </summary>
 
   <url type="homepage">
@@ -23,12 +23,9 @@
 
   <description>
     <p>
-    Groestlcoin is an experimental digital currency that enables instant
-    payments to anyone, anywhere in the world. Groestlcoin uses
-    peer-to-peer technology to operate with no central authority:
-    managing transactions and issuing money are carried out
-    collectively by the network. Groestlcoin Core is the name of open
-    source software which enables the use of this currency.
+    Groestlcoin Core connects to the Groestlcoin peer-to-peer network to download and
+    fully validate blocks and transactions. It also includes a wallet and
+    graphical user interface.
     </p>
   </description>
 
@@ -41,6 +38,7 @@
   </screenshots>
 
   <releases>
+    <release date="2022-05-30" version="23.0"/>
     <release date="2021-09-13" version="22.0"/>
     <release date="2021-05-20" version="2.21.1"/>
     <release date="2020-12-22" version="2.21.0"/>
