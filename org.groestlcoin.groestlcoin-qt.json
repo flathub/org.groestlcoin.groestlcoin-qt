@@ -2,7 +2,7 @@
   "id": "org.groestlcoin.groestlcoin-qt",
   "runtime": "org.freedesktop.Platform",
   "sdk": "org.freedesktop.Sdk",
-  "runtime-version": "21.08",
+  "runtime-version": "22.08",
   "command": "groestlcoin-qt",
   "finish-args": [
     "--socket=x11",
@@ -28,16 +28,16 @@
           "only-arches": [
               "x86_64"
           ],
-          "url": "https://github.com/Groestlcoin/groestlcoin/releases/download/v23.0/groestlcoin-23.0-x86_64-linux-gnu.tar.gz",
-          "sha256": "46ab078422d0d2aaf5b89ac9603cb61a6ebf6c26a73b9440365a4df5f9bce7de"
+          "url": "https://github.com/Groestlcoin/groestlcoin/releases/download/v24.0.1/groestlcoin-24.0.1-x86_64-linux-gnu.tar.gz",
+          "sha256": "4b69743190e2697d7b7772bf6f63cde595d590ff6664abf15a7201dab2a6098b"
         },
         {
           "type": "archive",
           "only-arches": [
               "aarch64"
           ],
-          "url": "https://github.com/Groestlcoin/groestlcoin/releases/download/v23.0/groestlcoin-23.0-aarch64-linux-gnu.tar.gz",
-          "sha256": "a8a68643bc05a4f2bbc1898e6c48c666c33ff4558d5eb87e6853eba94c091648"
+          "url": "https://github.com/Groestlcoin/groestlcoin/releases/download/v24.0.1/groestlcoin-24.0.1-aarch64-linux-gnu.tar.gz",
+          "sha256": "ca316c369728348406778c30b2b567bb2ede1ebcc87fb0305c0bed3dacae762b"
         }
       ]
     },
