@@ -28,16 +28,24 @@
           "only-arches": [
               "x86_64"
           ],
-          "url": "https://github.com/Groestlcoin/groestlcoin/releases/download/v24.0.1/groestlcoin-24.0.1-x86_64-linux-gnu.tar.gz",
-          "sha256": "4b69743190e2697d7b7772bf6f63cde595d590ff6664abf15a7201dab2a6098b"
+          "url": "https://github.com/Groestlcoin/groestlcoin/releases/download/v25.0/groestlcoin-25.0-x86_64-linux-gnu.tar.gz",
+          "sha256": "bcca36b5a2f1e83a4fd9888bc0016d3f46f9ef01238dc23a8e03f2f4ac3b9707",
+          "x-checker-data": {
+              "type": "git",
+              "tag-pattern": "^v([\\d.]+)$"
+          }
         },
         {
           "type": "archive",
           "only-arches": [
               "aarch64"
           ],
-          "url": "https://github.com/Groestlcoin/groestlcoin/releases/download/v24.0.1/groestlcoin-24.0.1-aarch64-linux-gnu.tar.gz",
-          "sha256": "ca316c369728348406778c30b2b567bb2ede1ebcc87fb0305c0bed3dacae762b"
+          "url": "https://github.com/Groestlcoin/groestlcoin/releases/download/v25.0/groestlcoin-25.0-aarch64-linux-gnu.tar.gz",
+          "sha256": "d8776b405113b46d6be6e4921c5a5e62cbfaa5329087abbec14cc24d750f9c94",
+          "x-checker-data": {
+              "type": "git",
+              "tag-pattern": "^v([\\d.]+)$"
+          }
         }
       ]
     },
