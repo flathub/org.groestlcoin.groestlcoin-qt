@@ -30,7 +30,7 @@
   </description>
 
   <screenshots>
-    <screenshot>
+    <screenshot type="default">
       <image type="source">
         https://user-images.githubusercontent.com/11212268/80859926-90ab8700-8c64-11ea-94bc-d40ed98d4226.png
       </image>
@@ -38,6 +38,7 @@
   </screenshots>
 
   <releases>
+    <release date="2024-04-29" version="27.0"/>
     <release date="2023-12-07" version="26.0"/>
     <release date="2023-06-02" version="25.0"/>
     <release date="2022-12-07" version="24.0.1"/>
@@ -51,6 +52,8 @@
   </releases>
 
   <content_rating type="oars-1.1"/>
-  <developer_name>Groestlcoin Core</developer_name>
+  <developer id="org.groestlcoin">
+    <name>Groestlcoin Core</name>
+  </developer>
 
 </component>
